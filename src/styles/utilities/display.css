@@ -1,0 +1,14 @@
+.d-block{
+  display: block;
+}
+.d-inline-block{
+  display: inline-block;
+}
+.d-none{
+  display: none;
+}
+.d-flex{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+}

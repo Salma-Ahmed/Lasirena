@@ -1,0 +1,9 @@
+.f-start{
+  float: inline-start;
+}
+.f-end{
+  float: inline-end;
+}
+.f-none{
+  float: none;
+}

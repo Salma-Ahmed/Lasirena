@@ -1,0 +1,38 @@
+@import "react-responsive-carousel/lib/styles/carousel.min.css";
+@import "bootstrap/dist/css/bootstrap.css";
+
+/* settings */
+@import "settings/colors.css";
+@import "settings/grid.css";
+@import "settings/fonts.css";
+
+/* functions, mixins */
+   
+/* generic */
+@import "generic/box-sizing.css";
+@import "generic/typography.css";
+@import "generic/common.css";
+
+/* elements */        
+@import "elements/body.css";
+@import "elements/paragraph.css";        
+
+/* objects */
+@import "objects/grid.css";
+@import "objects/buttons.css";
+@import "objects/titles.css";
+
+/* components */
+@import "components/main-slider.css";
+
+
+/* utilities */
+@import "utilities/screen-reader.css";
+@import "utilities/list.css";
+@import "utilities/responsive-imgs.css";
+@import "utilities/floats.css";
+@import "utilities/display.css";
+@import "utilities/text-align.css";
+@import "utilities/transition.css";
+@import "utilities/margins.css";
+@import "utilities/clearfix.css";

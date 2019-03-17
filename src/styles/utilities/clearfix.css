@@ -1,0 +1,5 @@
+.clearfix{
+  content: "";
+  overflow: hidden;
+  display: table;
+}
