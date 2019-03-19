@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import HomePage from '../HomePage';
+import App from '../App';
 
 class Lasirena extends Component {
 	render() {
-		return <HomePage />;
+		return <App />;
 	}
 }
 

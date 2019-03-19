@@ -7741,6 +7741,10 @@ button.bg-dark:focus {
 }.lsr-bg{
     background: url(./assets/images/lsr-bg.jpg) no-repeat;
     padding: 50px 0;
+}.no-p-r{
+    padding-right: 0 !important;
+}.no-p-l{
+    padding-left: 0 !important;
 }/* elements */body {
   margin: 0;
 }p{
@@ -7761,7 +7765,51 @@ button.bg-dark:focus {
             font-size: 2rem;
             color: #98999b;
             color: var(--lsr-secondary-clr);
-        }/* components *//** override react-responsive-carousel css*/.carousel .slide .legend{
+        }/* components */nav.navbar{
+    position: absolute;
+    width: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 9;
+}nav.navbar .navbar-brand{
+        margin: 0;
+    }nav.navbar .navbar-brand img{
+            height: 100px;
+        }.navbar-expand-lg .navbar-toggler{
+        border: 1px solid #f6f6f6;
+        border: 1px solid var(--lsr-white);
+        color: #f6f6f6;
+        color: var(--lsr-white);
+    }.navbar-expand-lg .navbar-nav{
+        -webkit-align-items: center;
+                align-items: center
+    }@media (max-width: 991px) {
+    .navbar-expand-lg .navbar-nav{
+            -webkit-align-items: flex-start;
+                    align-items: flex-start
+    }
+        }.navbar-expand-lg .navbar-nav .nav-link{
+            padding: 0;
+            color: #f6f6f6;
+            color: var(--lsr-white);
+            font-size: 16px;
+            font-size: var(--f-md);
+            padding: 0 1em;
+        }.navbar-expand-lg .navbar-nav .nav-link .phone-logo{
+                height: 50px;
+            }.navbar-expand-lg .navbar-nav .nav-link:hover{
+                color: #0093b2;
+                color: var(--lsr-primary-clr);
+            }@media (max-width: 1200px){
+        .navbar-expand-lg .navbar-nav .nav-link{
+                font-size: 14px;
+                font-size: var(--f-sm)
+        }
+            }@media (max-width: 991px) {
+        .navbar-expand-lg .navbar-nav .nav-link{
+                padding-left: 0;
+                padding: 0.4em 0
+        }
+            }/** override react-responsive-carousel css*/.carousel .slide .legend{
         top:50%;
         bottom: auto;
         -webkit-transform: translateY(-50%);
@@ -7843,7 +7891,7 @@ button.bg-dark:focus {
   text-align: left}.text-center {
   text-align: center;
 }.animate{
-  transition: all ease-in-out .5s;
+  transition: all ease-in-out .3s;
 }.m-0 {
   margin: 0;
 }.m-y-0 {

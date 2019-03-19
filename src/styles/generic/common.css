@@ -2,3 +2,9 @@
     background: url(./assets/images/lsr-bg.jpg) no-repeat;
     padding: 50px 0;
 }
+.no-p-r{
+    padding-right: 0 !important;
+}
+.no-p-l{
+    padding-left: 0 !important;
+}
