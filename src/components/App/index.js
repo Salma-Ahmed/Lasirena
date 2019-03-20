@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import HomePage from '../HomePage';
 import Navbar from '../Navbar';
-import { library } from '@fortawesome/fontawesome-svg-core'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faIgloo } from '@fortawesome/free-solid-svg-icons'
-import { faSearch } from '@fortawesome/free-solid-svg-icons'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+import Footer from '../Footer';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon, } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons'
+import { faIgloo, faBars, faSearch } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faIgloo, faSearch, faBars)
+library.add(faIgloo, faSearch, faBars,fab);
 
 class App extends Component {
 	render() {
@@ -15,6 +15,7 @@ class App extends Component {
 			<>
 				<Navbar></Navbar>
 				<HomePage />
+				<Footer></Footer>
 			</>
 		);
 	}
