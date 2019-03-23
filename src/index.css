@@ -7638,15 +7638,7 @@ button.bg-dark:focus {
   --lsr-black: #1c1c1c;
   --lsr-gold: #dd9933;
   --lsr-dark-gray: #77787b;
-}:root {
-  --gutter: 10px;
-  --container: 1200px;
-  --container-fluid: 100%;
-  --xs: 576px;
-  --sm: 768px;
-  --md: 992px;
-  --lg: 1200px;
-}:root{
+}/* @import "settings/grid.css"; */:root{
 /**font sizes*/
 --f-xs: 12px;
 --f-sm: 14px;

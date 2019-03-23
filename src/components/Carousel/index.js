@@ -9,7 +9,7 @@ class Slider extends Component {
 		return (
 			<Carousel autoplay showThumbs={false} showArrows={false} showStatus={false}>
 				{carousel.map(item => (
-					<div key={uuid()}>
+					<div key={uuid()} className="container row">
 						<img src="http://icclients.com/2019/lasirena/uploads/MainSlider/3lasirena-slider1.jpg" alt="lasirena-slider-img" />
 						<div className="legend">
 							<h1>{item.title_en}</h1>
