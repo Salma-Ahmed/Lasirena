@@ -7772,23 +7772,36 @@ button.bg-dark:focus {
         position: absolute;
         width: 100%;
         background: rgba(0,0,0,0.3);
-        z-index: 9;
-    }header nav.navbar .navbar-brand{
+        z-index: 9
+    }@media (max-width: 991px) {
+    header nav.navbar{
+            position: static
+    }
+        }header nav.navbar .navbar-brand{
             margin: 0;
         }header nav.navbar .navbar-brand img{
-                height: 100px;
-            }header .navbar-expand-lg .navbar-toggler{
+                height: 100px
+            }@media (max-width: 991px) {
+            header nav.navbar .navbar-brand img{
+                    height: 70px
+            }
+                }header .navbar-expand-lg .navbar-toggler{
             border: 1px solid #f6f6f6;
             border: 1px solid var(--lsr-white);
             color: #f6f6f6;
-            color: var(--lsr-white);
-        }header .navbar-expand-lg .navbar-nav{
+            color: var(--lsr-white)
+        }@media (max-width: 767px){ 
+        header .navbar-expand-lg .navbar-toggler{
+                padding: 10px 15px
+        }
+            }header .navbar-expand-lg .navbar-nav{
             -webkit-align-items: center;
                     align-items: center
         }@media (max-width: 991px) {
         header .navbar-expand-lg .navbar-nav{
                 -webkit-align-items: flex-start;
-                        align-items: flex-start
+                        align-items: flex-start;
+                font-size: 17px
         }
             }header .navbar-expand-lg .navbar-nav .nav-link{
                 padding: 0;
@@ -7832,9 +7845,21 @@ button.bg-dark:focus {
         }footer .top-footer .desc .logo{
                 width: 120px;
                 margin-right: 20px;
-            }@media(max-width: 767px){
+            }@media(max-width: 991px){
+        footer .top-footer .desc{
+                margin-bottom: 40px;
+        }
                 footer .top-footer .desc .logo{
                     width: 100px;
+                }
+            }@media(max-width: 767px){
+        footer .top-footer .desc{
+                -webkit-flex-basis: 100%;
+                        flex-basis: 100%;
+                margin-bottom: 20px;
+        }
+                footer .top-footer .desc .logo{
+                    width: 80px;
                 }
             }footer .top-footer .desc .txt img{
                     height: 50px;
@@ -7899,7 +7924,13 @@ button.bg-dark:focus {
                     color: #ffffff;
                     color: var(--lsr-abs-white);
                     padding-left: 15px
-                }footer .top-footer .subscribe form input[type="email"]::-webkit-input-placeholder{
+                }@media(max-width: 991px){
+
+                footer .top-footer .subscribe form input[type="email"] {
+                        -webkit-flex-grow: 0;
+                                flex-grow: 0
+                }
+                    }footer .top-footer .subscribe form input[type="email"]::-webkit-input-placeholder{
                         color: #ffffff;
                         color: var(--lsr-abs-white);
                         font-weight: 100;
