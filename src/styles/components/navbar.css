@@ -38,6 +38,9 @@ header{
                 padding: 0 1em;
                 .phone-logo{
                     height: 50px;
+                    @media(max-width: 767px){
+                        height: 35px;
+                    }
                 } 
                 &:hover{
                     color: var(--lsr-primary-clr);
