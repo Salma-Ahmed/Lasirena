@@ -24,6 +24,8 @@
 @import "objects/paragraphs.css";    
 
 /* components */
+@import "components/navbar.css";
+@import "components/footer.css";
 @import "components/main-slider.css";
 @import "components/about.css";  
 @import "components/category.css";
