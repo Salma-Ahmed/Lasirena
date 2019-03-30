@@ -1,18 +1,24 @@
 .titles{
+    margin-bottom: 2rem;
     .title{
         text-transform: capitalize;
         font-weight: var(--f-semibold);
         margin: 0;
         text-align: left;
+        line-height: 1;
+        font-size: 1.8rem;
         &__primary{
-            font-size: 1.8rem;
             color: var(--lsr-primary-clr);
             &::after{
-                content: url('./assets/images/waves.png');
+                content: "";
+                display: inline-block;
+                background: url('./assets/images/waves.png') no-repeat;
+                background-size: contain;
+                height: 18px;
+                width: 90px;
             }
         }
         &__secondary{
-            font-size: 2rem;
             color: var(--lsr-secondary-clr);
         }
     }

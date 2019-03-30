@@ -1,0 +1,9 @@
+.par{
+    color: var(--lsr-black);
+    &__primary{
+        font-size: 1rem;
+        @media(max-width: 768px){
+            font-size: 1.2rem;
+        }
+    }
+}

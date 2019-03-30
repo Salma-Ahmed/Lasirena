@@ -13,18 +13,23 @@
 @import "generic/typography.css";
 @import "generic/common.css";
 
+
 /* elements */        
-@import "elements/body.css";
-@import "elements/paragraph.css";        
+@import "elements/body.css";    
 
 /* objects */
-@import "objects/grid.css";
+@import "objects/grid.css";   
 @import "objects/buttons.css";
-@import "objects/titles.css";
+@import "objects/titles.css";        
+@import "objects/paragraphs.css";    
 
 /* components */
 @import "components/main-slider.css";
-
+@import "components/about.css";  
+@import "components/category.css";
+@import "components/contact.css";  
+@import "components/form.css";   
+@import "components/news.css";          
 
 /* utilities */
 @import "utilities/screen-reader.css";

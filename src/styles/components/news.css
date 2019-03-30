@@ -1,0 +1,107 @@
+.news{
+    &__carousel{
+        .carousel.carousel-slider .control-arrow{
+            display: inline-flex;
+            opacity: 1;
+            background-color: var(--lsr-gold) !important;
+            color: var(--lsr-gold);
+            bottom: 5rem;
+            left: auto;
+            top: auto;
+            left: auto;
+            padding: 7px 20px;
+            &.control-prev{
+                right: 3.2rem;
+                &::before{
+                    background: url('./assets/images/arrow-left.jpg') no-repeat center center;
+                }
+                
+            }
+            &.control-next{
+                right: 0px;
+                &::before{
+                    background: url('./assets/images/arrow-right.jpg') no-repeat center center;
+                }
+            }
+            &::before{
+                border: 0;
+                margin: 0;
+                width: 14px;
+                height: 28px;
+                content: "";
+            }
+            &.control-disabled{
+                opacity: .5;
+            }
+        }
+        .slide{
+            padding-bottom: 3rem;
+            background: transparent;
+            overflow: hidden;
+            & > div{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                div{
+                    &:first-of-type{
+                        flex-basis: 50%;
+                        position: relative;
+                        box-shadow: 1.5rem 1.5rem #fff, 1.5rem 1.5rem 0 2px var(--lsr-primary-clr);
+                    }
+                    &:last-of-type{
+                        flex-basis: 50%;
+                    }
+                }
+            }   
+        }
+    }
+    &__date{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        padding: .7rem 1.4rem;
+        width: 100px;
+        background: #fff;
+        color: var(--lsr-dark-gray);
+        font-size: .9rem;
+        display: block;
+        text-align: center;
+    }
+    &__dets{
+        padding: 0 0 0 3rem;
+        color: #000;
+    }
+    &__title{
+        font-size: 1.8rem;
+        font-weight: var(--f-semibold);
+        color: inherit;
+        text-transform: capitalize;
+    }
+    &__desc{
+        font-size: .9rem;
+        font-weight: var(--f-light);
+        color: inherit;
+    }
+}
+@media(max-width: 768px){
+    .news{
+        &__carousel{
+             .carousel.carousel-slider .control-arrow{
+                 bottom: 0;
+             }
+            .slide{
+                & > div{
+                    flex-direction: column;
+                    div:first-of-type{
+                        padding: 0;
+                        box-shadow: none;
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+        &__desc{
+            font-size: 1.5rem;
+        }
+    }
+}

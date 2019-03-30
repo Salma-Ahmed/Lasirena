@@ -1,0 +1,101 @@
+.category{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    &__overlay{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: 90%;
+        transform: translateX(-50%) translateY(-50%);
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        text-transform: uppercase;
+        color: var(--lsr-white);
+        font-size: 1.5rem;
+    }
+    &__btn{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: var(--lsr-primary-clr) !important;    
+        margin-top: auto;
+        font-weight: var(--f-bold);
+        &::after{
+            content: "";
+            background: url('./assets/images/lft-arrow.png') no-repeat;
+            width: 30px;
+            height: 14px;
+            vertical-align: middle;
+            display: inline-block;
+            background-size: contain;
+            margin-left: 5px;
+            margin-top: -1px;
+        }
+    }
+    &__zoom{
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        background: rgba(0,147,178,.34);
+        top:50%;
+        left: 50%;
+        margin:-6rem -6rem 0;
+        width: 12rem;
+        height: 12rem;
+        padding: 2.5rem;
+        opacity: 0;
+        span{
+            border-radius: 50%;
+            background: rgba(0,147,178,.87);
+            display:block;
+            width: 100%;
+            height:100%;
+            padding:2.5rem;
+            img{
+             width:100%;
+            }
+        }
+    }
+    & > span {
+        overflow: hidden;
+        img{
+            display: block;
+        }
+    }
+    &:hover{
+        .category__zoom{
+            opacity: 1;                    
+        }
+        .category__btn{
+            opacity: 0;
+        }
+        & > span img{
+            transform: scale(1.02);
+        }
+    }
+}      
+@media(min-width: 768px) and (max-width: 991px){
+    .category{
+        &__zoom{
+            width:10rem;
+            height: 10rem;
+            margin: -5rem -5rem 0;
+            span{
+                padding: 1.5rem;
+            }
+        }
+    }
+}
+@media(max-width: 768px) {    
+    .category{
+        &__zoom{
+            width: 15rem;
+            height: 15rem;
+            margin: -7.5rem -7.5rem 0;
+            padding: 3.5rem;
+        }
+    }
+}

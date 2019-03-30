@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import Slider from '../Carousel';
 import About from '../About';
-
+import Categories from '../Categories';
+import Contact from '../Contact';
+import News from '../News';
 class HomePage extends Component {
 	state = {
 		isLoaded: false,
 		carousel: [],
-		about: []
+		about: [],
+		categories: [],
+		news: []
 	};
 
 	componentDidMount() {
@@ -14,15 +18,15 @@ class HomePage extends Component {
 			.then(res => res.json())
 			.then(
 				result => {
-					console.log('hiii' + result.main_slider);
 					this.setState({
 						isLoaded: true,
 						carousel: result.main_slider,
-						about: result.about
+						about: result.about,
+						categories: result.project_categories,
+						news: result.news
 					});
 				},
 				error => {
-					console.log('hiii' + error);
 					this.setState({
 						isLoaded: true,
 						error
@@ -32,11 +36,14 @@ class HomePage extends Component {
 	}
 
 	render() {
-		const { carousel, about } = this.state;
+		const { carousel, about, categories, news } = this.state;
 		return (
 			<>
 				<Slider carousel={carousel} />
 				<About about={about} />
+				<Categories categories={categories} />
+				<News news={news} />
+				<Contact />
 			</>
 		);
 	}

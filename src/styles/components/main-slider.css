@@ -18,6 +18,7 @@
     }
     .control-dots{
         bottom: 6%;
+        padding: 0;
         .dot{
             width: 18px;
             height: 18px;      
