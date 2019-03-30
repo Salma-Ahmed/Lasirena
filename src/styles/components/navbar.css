@@ -1,0 +1,58 @@
+header{
+    nav.navbar{
+        position: absolute;
+        width: 100%;
+        background: rgba(0,0,0,0.3);
+        z-index: 9;
+        @media (max-width: 991px) {
+            position: static;
+        }
+        .navbar-brand{
+            margin: 0;
+            img{
+                height: 100px;
+                @media (max-width: 991px) {
+                    height: 70px;
+                }
+            }
+        }
+    }
+    .navbar-expand-lg{ 
+        .navbar-toggler{
+            border: 1px solid var(--lsr-white);
+            color: var(--lsr-white);
+            @media (max-width: 767px){
+                padding: 10px 15px;
+            }
+        }
+        .navbar-nav{
+            align-items: center;
+            @media (max-width: 991px) {
+                align-items: flex-start;
+                font-size: 17px;
+            }
+            .nav-link{
+                padding: 0;
+                color: var(--lsr-white);
+                font-size: var(--f-md);
+                padding: 0 1em;
+                .phone-logo{
+                    height: 50px;
+                    @media(max-width: 767px){
+                        height: 35px;
+                    }
+                } 
+                &:hover{
+                    color: var(--lsr-primary-clr);
+                }
+                @media (max-width: 1200px){
+                    font-size: var(--f-sm);
+                }
+                @media (max-width: 991px) {
+                    padding-left: 0;
+                    padding: 0.4em 0;
+                }
+            }
+        }
+    }
+}

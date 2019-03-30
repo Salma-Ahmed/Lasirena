@@ -3,7 +3,10 @@
   --lsr-secondary-clr: #98999b;
   --lsr-white: #f6f6f6;
   --lsr-blue: #0093b2;
-  --lsr-black: #1c1c1c;
+  --lsr-black: #1b1b1b;
   --lsr-gold: #dd9933;
   --lsr-dark-gray: #77787b;
+  --lsr-abs-black: #000000;
+  --lsr-abs-white: #ffffff;
+  --lsr-footer-color: #93918e;
 }

@@ -23,6 +23,8 @@
 @import "objects/titles.css";
 
 /* components */
+@import "components/navbar.css";
+@import "components/footer.css";
 @import "components/main-slider.css";
 
 
